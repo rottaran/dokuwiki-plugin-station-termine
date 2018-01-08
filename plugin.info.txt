@@ -3,5 +3,5 @@ author Randolf Rotta
 email  randolf.rotta@gmail.com
 date   2018-01-08
 name   stationtermine plugin
-desc   Display a event calendar based on struct data
+desc   Display an event calendar based on struct data
 url    https://github.com/rottaran/dokuwiki-plugin-station-termine
