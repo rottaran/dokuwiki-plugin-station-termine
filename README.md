@@ -1,1 +1,1 @@
-# dokuwiki-plugin-station_termine
+# dokuwiki-plugin-station-termine

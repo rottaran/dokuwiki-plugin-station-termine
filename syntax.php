@@ -7,11 +7,11 @@
  */
 
 // must be run within Dokuwiki
-use dokuwiki\plugin\station_termine\meta\StatCal;
+use dokuwiki\plugin\stationtermine\meta\StatCal;
 
 if (!defined('DOKU_INC')) die();
 
-class syntax_plugin_station_termine extends syntax_plugin_struct_table {
+class syntax_plugin_stationtermine extends syntax_plugin_struct_table {
 
     /** @var string which class to use for output */
     protected $tableclass = StatCal::class;
@@ -22,7 +22,7 @@ class syntax_plugin_station_termine extends syntax_plugin_struct_table {
      * @param string $mode Parser mode
      */
     public function connectTo($mode) {
-        $this->Lexer->addSpecialPattern('----+ *struct cal *-+\n.*?\n----+', $mode, 'plugin_station_termine');
+        $this->Lexer->addSpecialPattern('----+ *struct cal *-+\n.*?\n----+', $mode, 'plugin_stationtermine');
     }
 
     /**

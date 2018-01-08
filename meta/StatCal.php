@@ -1,6 +1,6 @@
 <?php
 
-namespace dokuwiki\plugin\station_termine\meta;
+namespace dokuwiki\plugin\stationtermine\meta;
 
 use dokuwiki\plugin\struct\meta\Column;
 use dokuwiki\plugin\struct\meta\SearchConfig;
