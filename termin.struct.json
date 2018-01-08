@@ -1,0 +1,332 @@
+{
+    "structversion": "2017-11-30",
+    "schema": "termin",
+    "id": "36",
+    "user": "randolf",
+    "config": {
+        "allowed editors": "",
+        "label": {
+            "de": "Termin"
+        }
+    },
+    "columns": [
+        {
+            "colref": 1,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 10,
+            "label": "start",
+            "class": "Date",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "format": "d.m.Y",
+                "prefilltoday": true,
+                "label": {
+                    "de": "Beginn"
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        },
+        {
+            "colref": 2,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 20,
+            "label": "ende",
+            "class": "Date",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "format": "d.m.Y",
+                "prefilltoday": true,
+                "label": {
+                    "de": "Ende"
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        },
+        {
+            "colref": 12,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 21,
+            "label": "startzeit",
+            "class": "Text",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "prefix": "",
+                "postfix": "",
+                "label": {
+                    "de": "Startzeit"
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        },
+        {
+            "colref": 13,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 22,
+            "label": "endzeit",
+            "class": "Text",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "prefix": "",
+                "postfix": "",
+                "label": {
+                    "de": "Ende"
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        },
+        {
+            "colref": 3,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 30,
+            "label": "titel",
+            "class": "Text",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "prefix": "",
+                "postfix": "",
+                "label": {
+                    "de": "Titel"
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        },
+        {
+            "colref": 4,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 40,
+            "label": "alter",
+            "class": "Text",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "prefix": "",
+                "postfix": "",
+                "label": {
+                    "de": "Altersgruppe"
+                },
+                "hint": {
+                    "de": "z.B. 14-18"
+                }
+            }
+        },
+        {
+            "colref": 5,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 50,
+            "label": "thema",
+            "class": "Tag",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "page": "",
+                "autocomplete": {
+                    "mininput": 2,
+                    "maxresult": 5
+                },
+                "label": {
+                    "de": "Themengebiet"
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        },
+        {
+            "colref": 6,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 60,
+            "label": "seite",
+            "class": "Page",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "usetitles": false,
+                "autocomplete": {
+                    "mininput": 2,
+                    "maxresult": 5,
+                    "namespace": "",
+                    "postfix": ""
+                },
+                "label": {
+                    "de": "Webseite"
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        },
+        {
+            "colref": 7,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 70,
+            "label": "uebernacht",
+            "class": "Checkbox",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "values": "Ja",
+                "label": {
+                    "de": "Mit \u00dcbernachtung?"
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        },
+        {
+            "colref": 8,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 80,
+            "label": "anmeldung",
+            "class": "Checkbox",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "values": "Ja",
+                "label": {
+                    "de": "Anmelden?"
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        },
+        {
+            "colref": 9,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 90,
+            "label": "beschreibung",
+            "class": "Wiki",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "prefix": "",
+                "postfix": "",
+                "rows": "5",
+                "cols": "50",
+                "label": {
+                    "de": "Beschreibung"
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        },
+        {
+            "colref": 10,
+            "ismulti": false,
+            "isenabled": false,
+            "sort": 100,
+            "label": "farbe",
+            "class": "Color",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "default": "#ffffff",
+                "label": {
+                    "de": "Farbe"
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        },
+        {
+            "colref": 11,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 110,
+            "label": "bild",
+            "class": "Media",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "mime": "image\/",
+                "width": 90,
+                "height": 90,
+                "agg_width": "",
+                "agg_height": "",
+                "label": {
+                    "de": "Bild"
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        },
+        {
+            "colref": 14,
+            "ismulti": false,
+            "isenabled": true,
+            "sort": 120,
+            "label": "datehint",
+            "class": "Text",
+            "config": {
+                "visibility": {
+                    "inpage": true,
+                    "ineditor": true
+                },
+                "prefix": "",
+                "postfix": "",
+                "label": {
+                    "de": ""
+                },
+                "hint": {
+                    "de": ""
+                }
+            }
+        }
+    ]
+}

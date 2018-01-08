@@ -1,0 +1,93 @@
+/* geht nicht :(
+.wrap_station-termin-edit {
+    td {
+         max-height: 200px;
+         display: block;
+         overflow-y: scroll;
+    }
+}
+*/
+
+/* without javascript, the row contents are simply unfolded visible */
+.js .dokuwiki .station-termin-table table.inline .station-termin-body {
+    display: none;
+}
+
+.dokuwiki .station-termin-table table.inline {
+    td.col0 { width: 5em; }
+    td.col1 { width: 7em; }
+    td.col2 {
+        padding-right: 0;
+        display: grid;
+    }
+
+    .station-termin-title {
+        font-weight: bold;
+        padding: 7px;
+        padding-top: 0;
+    }
+
+/*
+    .station-termin-title:after {
+        content: "...";
+    }
+*/
+
+    .station-termin-body {
+        cursor: default;
+        color: black;
+        background-color: #ffffff; //rgba(255,255,255,1)
+        box-shadow: 0 0 10px #ffffff; //rgba(255,255,255,1)
+        padding: 7px;
+    }
+
+    ul.station-termin-info { margin-bottom: 0px; }
+
+    /* colorbrewer: 8 classes, qualitative, Pastel2 */
+    /* ['#b3e2cd','#fdcdac','#cbd5e8','#f4cae4','#e6f5c9','#fff2ae','#f1e2cc','#cccccc'] */
+    tr.station-thema-kunst { background-color: #fdcdac; } /*1*/
+    tr.station-thema-natur { background-color: #b3e2cd; } /*0*/
+    tr.station-thema-technik { background-color: #cbd5e8; } /*2*/
+    tr.station-thema-verein { background-color: #cccccc; } /*7*/
+    tr.station-thema-ferien { background-color: #f1e2cc; } /*6*/
+    tr.station-thema-kino { background-color: #e6f5c9; } /*4*/
+    tr.station-thema-fest { background-color: #f4cae4; } /*3*/
+
+    tbody tr:hover th, tbody tr:hover td {
+          background-color: unset;
+    }
+
+    .folded {
+        cursor:pointer;
+        transition: all 0.4s;
+    }
+
+    /* colorbrewer: 8 classes, qualitative, Set2 */
+    /* ['#66c2a5','#fc8d62','#8da0cb','#e78ac3','#a6d854','#ffd92f','#e5c494','#b3b3b3'] */
+    tr.station-thema-kunst:hover, tr.station-thema-kunst.unfolded { background-color: #fc8d62; } /*1*/
+    tr.station-thema-natur:hover, tr.station-thema-natur.unfolded { background-color: #66c2a5; } /*0*/
+    tr.station-thema-technik:hover, tr.station-thema-technik.unfolded { background-color: #8da0cb; } /*2*/
+    tr.station-thema-verein:hover, tr.station-thema-verein.unfolded { background-color: #b3b3b3; } /*7*/
+    tr.station-thema-ferien:hover, tr.station-thema-ferien.unfolded { background-color: #e5c494; } /*6*/
+    tr.station-thema-kino:hover, tr.station-thema-kino.unfolded { background-color: #a6d854; } /*4*/
+    tr.station-thema-fest:hover, tr.station-thema-fest.unfolded { background-color: #e78ac3; } /*3*/
+
+    .folded:hover {
+        background-color: #4d87c7;
+        color: white;
+        transition: all 0.1s;
+    }
+
+    .unfolded {
+        background-color: #4d87c7;
+        color: white;
+        cursor:pointer;
+    }
+/*
+.unfolded:hover {
+        background-color: #4d87c7 !important;
+        color: white;
+        transition: all 0.1s;
+    }
+    */
+}
